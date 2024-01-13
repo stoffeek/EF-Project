@@ -1,0 +1,7 @@
+PostId,Title,Content,Published_On,UserId,BlogId
+1,Grundläggande C# Syntax,En introduktion till grundläggande syntax i C#,20240101,1,1
+2,Avancerad C# Programmering,Djupdykning i avancerade koncept i C#,20240105,1,1
+3,Senaste Nytt inom Gaming,Vad är nytt inom spelvärlden den här veckan,20240103,2,2
+4,Toppspel att Se Fram Emot,De mest efterlängtade spelen 2024,20240107,2,2
+5,Optimal Mat för Träning,Vad man ska äta före och efter träning,20240102,3,3
+6,Kostplaner för Atleter,Kost- och näringsråd för maximal prestation,20240106,3,3
