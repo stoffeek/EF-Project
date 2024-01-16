@@ -20,8 +20,7 @@ namespace EFpro
             DbPath = System.IO.Path.Join(path, "blogging.db");
         }
 
-        // Följande konfigurerar EF för att skapa en Sqlite-databasfil i den
-        // speciella "local" -mappen för din plattform.
+       
        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 {
     if (!optionsBuilder.IsConfigured)
@@ -39,7 +38,7 @@ namespace EFpro
         public string Url { get; set; }
         public string Name { get; set; }
 
-        public List<Post> Posts { get; } = new List<Post>();
+        public List<Post> Posts { get; set;} = new List<Post>();
     }
 
     public class Post
@@ -47,7 +46,7 @@ namespace EFpro
         public int PostId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public int Published_On { get; set; }
+        public DateTime PublishedOn { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }
@@ -62,7 +61,7 @@ namespace EFpro
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public List<Post> Posts { get; } = new List<Post>();
+        public List<Post> Posts { get; set;} = new List<Post>();
     }
 }
 
